@@ -1,0 +1,112 @@
+
+.form-container {
+  max-width: 100%;          
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;            
+  background: transparent;   
+  border-radius: 8px;
+}
+
+
+.form-container input {
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  padding: 6px 12px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 1rem;
+  transition: box-shadow 0.3s, border-color 0.3s;    
+}
+
+
+.form-container input:focus {
+  box-shadow: 0 0 3px 2px rgb(227, 237, 255);  
+}
+
+
+.form-container button {
+  background-color: #117acfff;
+  padding: 6px;
+  color: #fff;
+  border-radius: 5px;
+  border-color: #117acfff;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+.form-container button:hover {
+  background-color: rgb(61, 142, 207);
+}
+
+.form-container button:focus {
+  background-color: rgb(108, 167, 214);
+}
+
+
+.mensagem {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.footer{
+    display: flex;
+  justify-content: center;
+  align-items: center;     
+  gap: 20px;               
+}
+h3{ 
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.form-container textarea {
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  padding: 6px 12px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 1rem;
+  transition: box-shadow 0.3s, border-color 0.3s;    
+}
+
+.form-container textarea:focus {
+  box-shadow: 0 0 3px 2px rgb(227, 237, 255);  
+}
+input:disabled,
+textarea:disabled {
+  background-color: #f0f0f0;
+  color: #666;              
+  cursor: not-allowed;      
+}
+.erro {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  background-color: rgb(255, 223, 221);
+  text-align: center;
+  padding: 7px;
+  border-radius: 5px;
+  border-width: 3px;
+  border-color: red;
+  box-shadow: #666;
+}
+
