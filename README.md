@@ -73,7 +73,7 @@ npm run build
 
 **Acesse o sistema:**
 > No próprio servidor: http://localhost:3000
-> Em outros computadores na rede: http://<IP-do-servidor>:3000
+> Em outros computadores na rede: http://< IP-do-servidor >:3000
 
 
 ## Upgrades Futuros
