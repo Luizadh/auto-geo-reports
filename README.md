@@ -5,10 +5,18 @@
 
 Este projeto tem como objetivo automatizar a extração e integração de informações geoespaciais de diferentes bancos de dados(Oracle, PostGIS), arquivos GPKG e TIFF, que antes só eram acessíveis via **QGIS**, um software livre de Sistema de Informação Geográfica (GIS) usado para visualizar, editar e analisar mapas e camadas geográficas, exigindo consultas manuais.
 
+<img width="724" height="1024" alt="1783953691570-598a3449-c181-4fec-820e-457e4937aff3_1" src="https://github.com/user-attachments/assets/c8ed8d76-b63b-49d2-81ca-c4041179b542" />
+
+
 ## 🌐 Contexto
 No **Instituto de Pesquisa e Planejamento** da cidade, arquitetos e engenheiros recebem solicitações de outros órgãos públicos que desejam informações cadastrais e espaciais de imóveis ou lotes para diversos fins administrativos. Anteriormente, o processo de resposta envolvia localizar manualmente o imóvel no QGIS, selecionar e destacar o lote desejado, gerar cortes por print da imagem de drone da cidade, copiar informações cadastrais e colar manualmente em relatórios em PDF, o que era massante e propenso a erros, especialmente sob alta demanda.
 
 A solução desenvolvida elimina todo o trabalho manual. O usuário informa o número de inscrição do imóvel, os dados são extraídos diretamente das fontes, as geometrias são processadas e alinhadas automaticamente, e o relatório em PDF é gerado completo, com os dados desejados do imóvel, lote principal destacado, lotes vizinhos contornados e a localização na imagem de drone da cidade, no layout oficial do Instituto pronto para uso.
+
+
+<img width="986" height="341" alt="img1" src="https://github.com/user-attachments/assets/23a6ff15-a816-450e-896f-fb81dbd75f82" />
+
+<img width="898" height="690" alt="Screenshot_13-7-2026_112539_localhost" src="https://github.com/user-attachments/assets/129269f6-968f-4013-9151-64ea97989969" />
 
 ## ⚙️ Tecnologias Principais
 
