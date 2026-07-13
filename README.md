@@ -5,7 +5,8 @@
 
 Este projeto tem como objetivo automatizar a extração e integração de informações geoespaciais de diferentes bancos de dados(Oracle, PostGIS), arquivos GPKG e TIFF, que antes só eram acessíveis via **QGIS**, um software livre de Sistema de Informação Geográfica (GIS) usado para visualizar, editar e analisar mapas e camadas geográficas, exigindo consultas manuais.
 
-<img width="724" height="1024" alt="1783953691570-598a3449-c181-4fec-820e-457e4937aff3_1" src="https://github.com/user-attachments/assets/c8ed8d76-b63b-49d2-81ca-c4041179b542" />
+<img width="724" height="1022" alt="1783953691570-598a3449-c181-4fec-820e-457e4937aff3_1" src="https://github.com/user-attachments/assets/9b82e247-3b42-40da-baad-f8ec4ec826f0" />
+
 
 
 ## 🌐 Contexto
@@ -16,7 +17,8 @@ A solução desenvolvida elimina todo o trabalho manual. O usuário informa o n�
 
 <img width="986" height="341" alt="img1" src="https://github.com/user-attachments/assets/23a6ff15-a816-450e-896f-fb81dbd75f82" />
 
-<img width="898" height="690" alt="Screenshot_13-7-2026_112539_localhost" src="https://github.com/user-attachments/assets/129269f6-968f-4013-9151-64ea97989969" />
+<img width="898" height="926" alt="Screenshot_13-7-2026_112750_localhost" src="https://github.com/user-attachments/assets/785cfec7-b7ae-43f8-9662-8d0b6ab4f3e1" />
+
 
 ## ⚙️ Tecnologias Principais
 
