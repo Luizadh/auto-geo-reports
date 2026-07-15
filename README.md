@@ -3,7 +3,11 @@
 
 ## 🎯 Objetivo do Projeto
 
-Este projeto tem como objetivo automatizar a extração e integração de informações geoespaciais de diferentes bancos de dados(Oracle, PostGIS), arquivos GPKG e TIFF, que antes só eram acessíveis via **QGIS**, um software livre de Sistema de Informação Geográfica (GIS) usado para visualizar, editar e analisar mapas e camadas geográficas, exigindo consultas manuais.
+Este projeto automatiza a geração de relatórios imobiliários oficiais do Instituto de Pesquisa e Planejamento Urbano de Volta Redonda, eliminando um processo que antes exigia consultas manuais no QGIS e montagem manual do documento.
+
+Com apenas a inscrição municipal do imóvel, o sistema integra dados de duas fontes distintas: o banco Oracle, que armazena as informações cadastrais do lote (proprietário, área, tipo de imóvel, etc.), e o PostgreSQL/PostGIS, que contém a geometria dos lotes. A partir dessas coordenadas, o sistema recorta automaticamente a imagem aérea da cidade, obtida de arquivos TIFF provenientes de levantamento por drone, e destaca o perímetro do lote consultado em vermelho sobre a imagem.
+
+O usuário acessa o sistema pelo frontend em React, informa a inscrição municipal e seleciona quais campos cadastrais deseja incluir no relatório. O sistema então gera automaticamente um PDF no formato institucional do IPPU, com as informações selecionadas e a imagem do lote destacada, pronto para uso oficial.
 
 <img width="724" height="1022" alt="1783953691570-598a3449-c181-4fec-820e-457e4937aff3_1" src="https://github.com/user-attachments/assets/9b82e247-3b42-40da-baad-f8ec4ec826f0" />
 
