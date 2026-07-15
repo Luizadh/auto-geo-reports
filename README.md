@@ -5,7 +5,7 @@
 
 Este projeto automatiza a geração de relatórios imobiliários oficiais do Instituto de Pesquisa e Planejamento Urbano de Volta Redonda, eliminando um processo que antes exigia consultas manuais no QGIS e montagem manual do documento.
 
-Com apenas a inscrição municipal do imóvel, o sistema integra dados de duas fontes distintas: o banco Oracle, que armazena as informações cadastrais do lote (proprietário, área, tipo de imóvel, etc.), e o PostgreSQL/PostGIS, que contém a geometria dos lotes. A partir dessas coordenadas, o sistema recorta automaticamente a imagem aérea da cidade, obtida de arquivos TIFF provenientes de levantamento por drone, e destaca o perímetro do lote consultado em vermelho sobre a imagem.
+Com apenas a inscrição municipal do imóvel, o sistema integra dados de duas fontes distintas: o banco Oracle, que armazena as informações cadastrais do lote (proprietário, área, tipo de imóvel, etc.), e o PostgreSQL/PostGIS, que contém a geometria georreferenciadas dos lotes. A partir dessas coordenadas, o sistema recorta automaticamente a imagem aérea da cidade, obtida de arquivos TIFF provenientes de levantamento por drone, e destaca o perímetro do lote consultado em vermelho sobre a imagem.
 
 O usuário acessa o sistema pelo frontend em React, informa a inscrição municipal e seleciona quais campos cadastrais deseja incluir no relatório. O sistema então gera automaticamente um PDF no formato institucional do IPPU, com as informações selecionadas e a imagem do lote destacada, pronto para uso oficial.
 
@@ -14,10 +14,12 @@ O usuário acessa o sistema pelo frontend em React, informa a inscrição munici
 
 
 ## 🌐 Contexto
-No **Instituto de Pesquisa e Planejamento** da cidade, arquitetos e engenheiros recebem solicitações de outros órgãos públicos que desejam informações cadastrais e espaciais de imóveis ou lotes para diversos fins administrativos. Anteriormente, o processo de resposta envolvia localizar manualmente o imóvel no QGIS, selecionar e destacar o lote desejado, gerar cortes por print da imagem de drone da cidade, copiar informações cadastrais e colar manualmente em relatórios em PDF, o que era massante e propenso a erros, especialmente sob alta demanda.
 
-A solução desenvolvida elimina todo o trabalho manual. O usuário informa o número de inscrição do imóvel, os dados são extraídos diretamente das fontes, as geometrias são processadas e alinhadas automaticamente, e o relatório em PDF é gerado completo, com os dados desejados do imóvel, lote principal destacado, lotes vizinhos contornados e a localização na imagem de drone da cidade, no layout oficial do Instituto pronto para uso.
+No **Instituto de Pesquisa e Planejamento Urbano** da cidade, arquitetos e engenheiros recebem solicitações de outros órgãos públicos que necessitam de informações cadastrais e espaciais de imóveis ou lotes para diversos fins administrativos. Anteriormente, o processo de resposta envolvia localizar manualmente o imóvel no QGIS, selecionar e destacar o lote desejado, gerar recortes por meio de capturas da imagem de drone da cidade, copiar informações cadastrais e inseri-las manualmente em relatórios em PDF. Esse fluxo era repetitivo, demorado e propenso a erros, especialmente em períodos de alta demanda.
 
+A solução desenvolvida automatiza todo esse processo. O usuário precisa apenas informar o número de inscrição do imóvel, de forma simples e intuitiva. A partir dessa única informação, o sistema extrai automaticamente os dados das fontes, processa e alinha as geometrias, identifica o lote principal e os lotes vizinhos e gera um relatório em PDF completo, seguindo o layout oficial do Instituto. O documento é produzido pronto para uso, contendo os dados cadastrais do imóvel, o lote principal destacado, os lotes vizinhos contornados e sua localização na imagem de drone da cidade, eliminando o trabalho manual, reduzindo o tempo de resposta e minimizando a ocorrência de erros.
+
+As figuras a seguir ilustram o fluxo de utilização do sistema, desde a localização do imóvel até a geração automática do relatório em PDF:
 
 <img width="986" height="341" alt="img1" src="https://github.com/user-attachments/assets/23a6ff15-a816-450e-896f-fb81dbd75f82" />
 
