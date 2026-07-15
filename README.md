@@ -87,10 +87,6 @@ npm run build
 > Isso gera a pasta build/, deve ser colocada no servidor web (como Apache/XAMPP) para servir o frontend
 
 
-**Acesse o sistema:**
-> No próprio servidor: http://localhost:3000
-> Em outros computadores na rede: http://< IP-do-servidor >:3000
-
 
 ## Upgrades Futuros
 Interface mais completa, mais filtros de análise
